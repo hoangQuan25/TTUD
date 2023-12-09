@@ -1,3 +1,26 @@
+// // Thuật toán Kruskal là một thuật toán tham lam (greedy algorithm) được sử dụng để tìm cây bao trùm 
+// (minimum spanning tree) của một đồ thị có trọng số. Cây bao trùm là một cây con của đồ thị mà nó bao 
+// phủ tất cả các đỉnh và có tổng trọng số nhỏ nhất.
+
+// Dưới đây là miêu tả ngắn về thuật toán Kruskal:
+
+// Sắp xếp cạnh:
+
+// Sắp xếp tất cả các cạnh của đồ thị theo thứ tự tăng dần của trọng số.
+// Tạo cây rỗng:
+
+// Khởi tạo cây bao trùm là một tập hợp các đỉnh đơn (cây rỗng).
+// Chọn cạnh nhỏ nhất:
+
+// Lặp qua danh sách các cạnh theo thứ tự đã sắp xếp.
+// Chọn cạnh có trọng số nhỏ nhất, nhưng đảm bảo rằng việc thêm cạnh này vào cây không tạo ra chu trình (không tạo thành đồ thị có chu trình).
+// Thêm cạnh vào cây:
+
+// Thêm cạnh đã chọn vào cây bao trùm.
+// Lặp lại:
+
+// Lặp lại bước 3 và 4 cho đến khi cây bao trùm chứa tất cả các đỉnh.
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
